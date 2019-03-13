@@ -1,6 +1,6 @@
 #Steps Specific Configuration
 general:
-  changeManagement:
+  changeManagement:ChangeDocument\s?:
     endpoint: 'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
     credentialsId: 'CM'
     type: 'SOLMAN'
