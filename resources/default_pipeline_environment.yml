@@ -1,8 +1,8 @@
 #Steps Specific Configuration
 general:
   changeManagement:
-    type: 'SOLMAN
-    credentialsId: 'CM'
+    type:'SOLMAN'
+    credentialsId:'CM'
     endpoint:'https://<backend-system>/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
 steps:
   mtaBuild:
