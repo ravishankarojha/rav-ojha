@@ -1,10 +1,10 @@
 #Steps Specific Configuration
 general:
-  changeManagement:ChangeDocument\s?:
+  changeManagement:
+  type: 'SOLMAN'
     endpoint: 'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
     credentialsId: 'CM'
-    type: 'SOLMAN'
-steps:
+    steps:
   mtaBuild:
     buildTarget: 'NEO'
   transportRequestCreate:
