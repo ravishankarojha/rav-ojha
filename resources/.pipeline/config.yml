@@ -1,3 +1,4 @@
+setupCommonPipelineEnvironment script:this
 #Steps Specific Configuration
 general:
   changeManagement:
