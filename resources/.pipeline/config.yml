@@ -12,3 +12,4 @@ steps:
     developmentSystemId: '<value for developmentSystemId>'
   transportRequestUploadFile:
     applicationId: 'HCP'
+setupCommonPipelineEnvironment script:this
