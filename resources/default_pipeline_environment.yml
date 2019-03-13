@@ -11,4 +11,3 @@ steps:
     developmentSystemId: 'SM1~ABAP/001'
   transportRequestUploadFile:
     applicationId: 'HCP'
-setupCommonPipelineEnvironment script:this
