@@ -1,5 +1,6 @@
 #Steps Specific Configuration
 general:
+collectTelemetryData: true
 checkChangeInDevelopment:
    changeManagement:
     type:'SOLMAN'
