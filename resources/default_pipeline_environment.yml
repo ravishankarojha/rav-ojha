@@ -13,3 +13,10 @@ steps:
     developmentSystemId: 'SM1~ABAP/001'
   transportRequestUploadFile:
     applicationId: 'HCP'
+ checkChangeInDevelopment script:this
+                             changeManagement: [
+                               endpoint: 'https:example.org/cm'
+                               git: [
+                                 from: 'HEAD~1'
+                               ]
+                             ]
