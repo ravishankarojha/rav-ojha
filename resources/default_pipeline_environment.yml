@@ -3,9 +3,9 @@ general:
 collectTelemetryData: true
 checkChangeInDevelopment:
    changeManagement:
+    endpoint:'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
     type:'SOLMAN'
     credentialsId:'CM'
-    endpoint:'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
 steps:
   mtaBuild:
     buildTarget: 'NEO'
@@ -13,10 +13,3 @@ steps:
     developmentSystemId: 'SM1~ABAP/001'
   transportRequestUploadFile:
     applicationId: 'HCP'
- checkChangeInDevelopment script:this
-                             changeManagement: [
-                               endpoint: 'https:example.org/cm'
-                               git: [
-                                 from: 'HEAD~1'
-                               ]
-                             ]
