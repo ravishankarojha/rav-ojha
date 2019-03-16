@@ -1,7 +1,7 @@
 #Steps Specific Configuration
 general:
    collectTelemetryData: true
-  changeManagement:
+    changeManagement:
     type: 'NONE' # SOLMAN, CTS, NONE
     transportRequestLabel: 'TransportRequest\s?:'
     changeDocumentLabel: 'ChangeDocument\s?:'
