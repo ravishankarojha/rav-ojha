@@ -7,12 +7,12 @@
 general:
   collectTelemetryData: true
   changeManagement:
-    type: 'SOLMAN' # SOLMAN, CTS, NONE
+    type:'SOLMAN' # SOLMAN, CTS, NONE
     transportRequestLabel: 'TransportRequest\s?:'
     changeDocumentLabel: 'ChangeDocument\s?:'
     clientOpts: ''
     credentialsId: 'CM'
-       endpoint: 'https://<backend-system>/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
+       endpoint:'https://<backend-system>/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
     git:
       from: 'origin/master'
       to: 'HEAD'
