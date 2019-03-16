@@ -29,6 +29,13 @@ general:
     jnlpAgent: 's4sdk/jenkins-agent-k8s:latest'
   manualConfirmation: true
   productiveBranch: 'master'
+  steps:
+  mtaBuild:
+    buildTarget: 'NEO'
+  transportRequestCreate:
+    developmentSystemId: 'SM1~ABAP/001'
+  transportRequestUploadFile:
+    applicationId: 'HCP'
 
 #Steps Specific Configuration
 steps:
