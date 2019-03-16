@@ -61,7 +61,7 @@ void call(Map parameters = [:]) {
                 echo "[INFO] '${mtaYamlName}' file found in project sources."
             }
 
-            def mtaYaml = readYaml file: /hana/backup/mta_archive_builder.jar
+            def mtaYaml = readYaml file: "/hana/backup/mta_archive_builder.jar"
 
             //[Q]: Why not yaml.dump()? [A]: This reformats the whole file.
             sh "sed -ie \"s/\\\${timestamp}/`date +%Y%m%d%H%M%S`/g\" \"${mtaYamlName}\""
