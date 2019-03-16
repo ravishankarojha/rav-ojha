@@ -2,7 +2,7 @@
 general:
   collectTelemetryData: true
   changeManagement:
-    type: 'NONE' # SOLMAN, CTS, NONE
+    type: 'SOLMAN' # SOLMAN, CTS, NONE
     transportRequestLabel: 'TransportRequest\s?:'
     changeDocumentLabel: 'ChangeDocument\s?:'
     clientOpts: ''
