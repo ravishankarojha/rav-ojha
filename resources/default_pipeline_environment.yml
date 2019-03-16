@@ -1,12 +1,12 @@
-#Steps Specific Configuration
+#Project Setup
 general:
-   collectTelemetryData: true
-    changeManagement:
-              type: 'SOLMAN' 
-              transportRequestLabel: 'TransportRequest\s?:'
-              changeDocumentLabel: 'ChangeDocument\s?:'
-              endpoint: 'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
-              credentialsId: 'CM'
+  collectTelemetryData: true
+  changeManagement:
+    type: 'NONE' # SOLMAN, CTS, NONE
+    transportRequestLabel: 'TransportRequest\s?:'
+    changeDocumentLabel: 'ChangeDocument\s?:'
+    clientOpts: ''
+    credentialsId: 'CM'
 steps:
   mtaBuild:
     buildTarget: 'NEO'
