@@ -15,8 +15,10 @@ general:
       to: 'HEAD'
       format: '%b'
 steps:
-  mtaBuild:
-    buildTarget: 'NEO'
+ def mtarFileName
+dir('/hana/backup/mta_archive_builder.jar'){
+  mtarFileName = mtaBuild script:this, buildTarget: 'NEO'
+}
   transportRequestCreate:
     developmentSystemId: 'SM1~ABAP/001'
   transportRequestUploadFile:
