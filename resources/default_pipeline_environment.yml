@@ -1,18 +1,3 @@
-#Steps Specific Configuration
-general:
-collectTelemetryData: true
-checkChangeInDevelopment:
-   changeManagement:
-    endpoint:'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
-    type:'SOLMAN'
-    credentialsId:'CM'
-steps:
-  mtaBuild:
-    buildTarget: 'NEO'
-  transportRequestCreate:
-    developmentSystemId: 'SM1~ABAP/001'
-  transportRequestUploadFile:
-    applicationId: 'HCP'
 #
 # ATTENTION: This file is part of the API, breaking changes here directly affect the consumers of the library.
 #            Please avoid breaking changes if possible.
