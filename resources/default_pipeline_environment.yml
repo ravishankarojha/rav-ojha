@@ -8,7 +8,7 @@ general:
   collectTelemetryData: true
   changeManagement:
     endpoint: 'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_RES_DISP_INCIDENTS_SRV'
-    type: 'SOLMAN' # SOLMAN, CTS, NONE
+    type: 'NONE' # SOLMAN, CTS, NONE
     transportRequestLabel: 'TransportRequest\s?:'
     changeDocumentLabel: 'ChangeDocument\s?:'
     changeDocumentId :
