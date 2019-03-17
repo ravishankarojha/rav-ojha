@@ -15,9 +15,9 @@ general:
       to: 'HEAD'
       format: '%b'
 steps:
- mtaBuild:
+    mtaBuild:
     buildTarget: 'NEO'
-  transportRequestCreate:
+    transportRequestCreate:
     developmentSystemId: 'SM1~ABAP/001'
-  transportRequestUploadFile:
+    transportRequestUploadFile:
     applicationId: 'HCP'
