@@ -242,7 +242,6 @@ steps:
     mtaJarLocation: '/hana/backu/mta-archive-builder.jar'
     dockerImage: 'ppiper/mta-archive-builder'
     applicationName : 'SOLMAN'
-    extension : '/hana/backup/node.js/node-v10.15.3-linux-x64/lib/node_modules/npm'
   neoDeploy:
     dockerImage: 's4sdk/docker-neo-cli'
     deployMode: 'mta'
@@ -321,7 +320,7 @@ steps:
     color: "${buildStatus == 'SUCCESS'?'#008000':'#E60000'}"
     defaultMessage: "${buildStatus}: Job ${env.JOB_NAME} <${env.BUILD_URL}|#${env.BUILD_NUMBER}>"
   snykExecute:
-    buildDescriptorFile: './package.json'
+    buildDescriptorFile: '/hana/backup/node.js/node-v10.15.3-linux-x64/lib/node_modules/npm/package.json'
     dockerImage: 'node:8-stretch'
     exclude: []
     monitor: true
