@@ -11,6 +11,7 @@ general:
     type: 'SOLMAN' # SOLMAN, CTS, NONE
     transportRequestLabel: 'TransportRequest\s?:'
     changeDocumentLabel: 'ChangeDocument\s?:'
+    changeDocumentId :
     clientOpts: ''
     credentialsId: 'CM'
     git:
