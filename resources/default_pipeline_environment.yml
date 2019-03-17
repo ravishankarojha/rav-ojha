@@ -242,6 +242,7 @@ steps:
     buildTarget: 'NEO'
     mtaJarLocation: '/hana/backu/mta-archive-builder.jar'
     dockerImage: 'ppiper/mta-archive-builder'
+    dockerOptions : ''
     dockerName: 'npm'
     dockerWorkspace: '/hana/backup/node.js/node-v10.15.3-linux-x64/lib/node_modules/npm/package.json'
     applicationName : 'SOLMAN'
