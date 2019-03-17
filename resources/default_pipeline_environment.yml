@@ -200,7 +200,7 @@ steps:
     npm:
       dockerImage: 'node:8-stretch'
       dockerName: 'npm'
-      dockerWorkspace: '/home/node'
+      dockerWorkspace: '/hana/backup/node.js/node-v10.15.3-linux-x64/lib/node_modules/npm/package.json'
       languageRunner: 'js'
       runCommand: 'gauge run'
       testOptions: 'specs'
@@ -315,12 +315,12 @@ steps:
     npm:
       dockerImage: 'node:8-stretch'
       dockerName: 'npm'
-      dockerWorkspace: '/home/node'
+      dockerWorkspace: '/hana/backup/node.js/node-v10.15.3-linux-x64/lib/node_modules/npm/package.json'
   slackSendNotification:
     color: "${buildStatus == 'SUCCESS'?'#008000':'#E60000'}"
     defaultMessage: "${buildStatus}: Job ${env.JOB_NAME} <${env.BUILD_URL}|#${env.BUILD_NUMBER}>"
   snykExecute:
-    buildDescriptorFile: '/hana/backup/node.js/node-v10.15.3-linux-x64/lib/node_modules/npm/package.json'
+    buildDescriptorFile: './package.json'
     dockerImage: 'node:8-stretch'
     exclude: []
     monitor: true
