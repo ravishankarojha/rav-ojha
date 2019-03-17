@@ -5,7 +5,7 @@ general:
       failIfStatusIsNotInDevelopment: true
   changeManagement:
     endpoint: 'https://hclsdsm72a.hcldigilabs.com:8002/sap/opu/odata/sap/AI_CRM_GW_CM_CI_SRV'
-    type: 'NONE' # SOLMAN, CTS, NONE
+    type: 'SOLMAN' # SOLMAN, CTS, NONE
     transportRequestLabel: 'TransportRequest\s?:'
     changeDocumentLabel: 'ChangeDocument\s?:'
     clientOpts: ''
@@ -15,11 +15,8 @@ general:
       to: 'HEAD'
       format: '%b'
 steps:
- def mtarFileName
-dir('/hana/backup/mta_archive_builder.jar')
-{
-  mtarFileName = mtaBuild script:this, buildTarget: 'NEO'
-}
+ mtaBuild:
+    buildTarget: 'NEO'
   transportRequestCreate:
     developmentSystemId: 'SM1~ABAP/001'
   transportRequestUploadFile:
