@@ -239,8 +239,9 @@ steps:
     logSuccessfulMavenTransfers: false
   mtaBuild:
     buildTarget: 'NEO'
-    mtaJarLocation: '/opt/sap/mta/lib/mta.jar'
+    mtaJarLocation: '/hana/backup/mta-archive-builder.jar'
     dockerImage: 'ppiper/mta-archive-builder'
+    applicationName : 'SOLMAN'
   neoDeploy:
     dockerImage: 's4sdk/docker-neo-cli'
     deployMode: 'mta'
