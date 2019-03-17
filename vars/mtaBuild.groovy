@@ -47,7 +47,7 @@ void call(Map parameters = [:]) {
             def mta = new JavaArchiveDescriptor('SAP Multitarget Application Archive Builder', 'MTA_JAR_LOCATION', 'mtaJarLocation', '1.0.6', '-v', java)
 
             def mtaYamlName = "mta.yaml"
-            def applicationName = configuration.applicationName
+            def applicationName = HCP
 
             if (!fileExists(mtaYamlName)) {
                 if (!applicationName) {
