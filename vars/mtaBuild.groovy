@@ -81,6 +81,8 @@ void call(Map parameters = [:]) {
             mtaCall += ' build'
 
             echo "[INFO] Executing mta build call: '${mtaCall}'."
+            
+            export HOME=/tmp
 
             sh """#!/bin/bash
             export PATH=./node_modules/.bin:${PATH}
